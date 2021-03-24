@@ -1,0 +1,8 @@
+version: '2'
+services:
+  ava-postgresql:
+    extends:
+      file: postgresql.yml
+      service: ava-postgresql
+    container_name: sva-postgresql
+
