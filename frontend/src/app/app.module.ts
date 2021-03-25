@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AccordionModule } from 'primeng/accordion';
 import {MenuItem} from 'primeng/api';
@@ -11,7 +12,8 @@ import { LoginComponent } from './shared/login/login.component';
   declarations: [ AppComponent, LoginComponent ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
