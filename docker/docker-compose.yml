@@ -4,5 +4,5 @@ services:
     extends:
       file: postgresql.yml
       service: ava-postgresql
-    container_name: sva-postgresql
+    container_name: ava-postgresql
 
