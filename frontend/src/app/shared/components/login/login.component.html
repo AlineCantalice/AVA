@@ -1,0 +1,20 @@
+<app-card>
+   <form [formGroup]="formulario">
+        <div class="p-field p-grid">
+            <span class="p-float-label">
+                <input id="float-input" [(ngModel)]="emailInput" type="text" pInputText> 
+                <label for="float-input">E-mail</label>
+            </span>
+        </div>
+        <div class="p-field p-grid">
+            <span class="p-float-label">
+                <input id="float-input" [(ngModel)]="senhaInput" type="password" pInputText> 
+                <label for="float-input">Senha</label>
+            </span>
+        </div>
+        <div>
+            <button>Entra</button>
+        </div>
+    </form>
+</app-card>
+

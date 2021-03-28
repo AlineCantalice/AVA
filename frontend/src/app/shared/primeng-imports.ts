@@ -13,6 +13,7 @@ import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { ColorPickerModule } from 'primeng/colorpicker';
 import { ContextMenuModule } from 'primeng/contextmenu';
 import {MenuItem} from 'primeng/api';
+import {FocusTrapModule} from 'primeng/focustrap';
 import { DataViewModule } from 'primeng/dataview';
 import { DialogModule } from 'primeng/dialog';
 import { DropdownModule } from 'primeng/dropdown';
@@ -127,4 +128,5 @@ export const PRIMENG_IMPORTS = [
     TooltipModule,
     TreeModule,
     TreeTableModule,
+    FocusTrapModule
 ];
