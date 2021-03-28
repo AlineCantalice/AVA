@@ -1,3 +1,5 @@
+import { LoginComponent } from './shared/components/login/login.component';
+import { UsuarioService } from './services/usuario/usuario.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
@@ -13,6 +15,7 @@ import { PageNotificationModule, BreadcrumbModule, MenuModule, ErrorStackModule 
 import { SecurityModule, VersionTagModule } from '@nuvem/angular-base';
 import { DiarioErrosComponent } from './components/diario-erros/diario-erros.component';
 import { BlockUIModule } from 'ng-block-ui';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [
@@ -35,10 +38,14 @@ import { BlockUIModule } from 'ng-block-ui';
         ErrorStackModule,
         VersionTagModule,
         SecurityModule.forRoot(environment.auth),
-        MenuModule
+        MenuModule,
+        FormsModule,
+        ReactiveFormsModule
     ],
     providers: [
-        { provide: LocationStrategy, useClass: HashLocationStrategy }
+        { provide: LocationStrategy, useClass: HashLocationStrategy },
+        UsuarioService,
+        LoginComponent
     ],
     bootstrap: [AppComponent]
 })
